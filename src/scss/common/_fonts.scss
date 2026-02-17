@@ -3,8 +3,28 @@
 //     src: url('/wp-content/themes/canada/assets/font/IBM Plex Sans.ttf') format('truetype');
 //     font-style: normal;
 // }
+
 @font-face {
-    font-family: "roobert";
-    src: url("../../../public/assets/fonts/");
-    font-weight: 400;
+    font-family: "satoshi-light";
+    src: url("../../../public/assets/fonts/satoshi-light.otf");
 }
+@font-face {
+    font-family: "satoshi-regular";
+    src: url("../../../public/assets/fonts/satoshi-regular.otf");
+}
+@font-face {
+    font-family: "helvetica-neue-medium";
+    src: url("../../../public/assets/fonts/helveticaneuemedium.otf");
+}
+
+.satoshi-light {
+    font-family: "satoshi-light";
+}
+.satoshi-regular {
+    font-family: "satoshi-regular";
+}
+.helvetica-neue-medium {
+    font-family: "helvetica-neue-medium";
+}
+
+// .tk-ivypresto-display 
