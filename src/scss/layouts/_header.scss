@@ -9,10 +9,21 @@ header {
 
                 &:last-child {
                     margin-right: 0px;
+
+                    &:hover {
+                        .header-link {
+                            text-decoration: none !important;
+                        }
+                    }
                 }
 
                 .header-link {
                     padding-inline: 21px;
+
+                    &:hover {
+                        text-decoration: underline !important;
+                    }
+
                 }
             }
         }

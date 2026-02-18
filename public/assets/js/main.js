@@ -20434,18 +20434,43 @@ var Plugins = /*#__PURE__*/function () {
   plugins_createClass(Plugins, [{
     key: "init",
     value: function init() {
-      this.hideShow();
+      this.ExploreTreatmentSlider();
+      this.TestimonialSlider();
     }
   }, {
-    key: "hideShow",
-    value: function hideShow() {
-      $(document).ready(function () {
-        $("#hide").click(function () {
-          $("p").hide();
-        });
-        $("#show").click(function () {
-          $("p").show();
-        });
+    key: "ExploreTreatmentSlider",
+    value: function ExploreTreatmentSlider() {
+      $('.explore-treatment-slider').slick({
+        slidesToShow: 3.5,
+        slidesToScroll: 1,
+        infinite: false,
+        arrows: true,
+        dots: false,
+        prevArrow: '.treatment-slider-section .prev-arrow',
+        nextArrow: '.treatment-slider-section .next-arrow',
+        responsive: [{
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2
+          }
+        }, {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
+      });
+    }
+  }, {
+    key: "TestimonialSlider",
+    value: function TestimonialSlider() {
+      $('.testimonial-slider').slick({
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: false,
+        prevArrow: '.testimonial-section .prev-arrow',
+        nextArrow: '.testimonial-section .next-arrow'
       });
     }
   }]);

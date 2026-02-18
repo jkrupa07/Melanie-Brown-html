@@ -14,6 +14,24 @@ button,
     padding-right: 25px;
     border-radius: $radius50;
 
+    .btn-arrow {
+        width: 24px;
+        transform-origin: left;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+        .btn-arrow {
+            transform: scaleX(1.2);
+        }
+    }
+
+    &.link-btn{
+        padding: 0 !important;
+        color: $color-494850;
+
+    }
+
     &.border-white-btn {
         background-color: transparent;
         border: 1px solid $color-FFFFFF;
@@ -25,6 +43,7 @@ button,
             color: $color-494850;
         }
     }
+
     &.border-494850-btn {
         background-color: transparent;
         border: 1px solid $color-494850;
@@ -36,7 +55,7 @@ button,
             color: $color-FFFFFF;
         }
     }
-    
+
     &.bg-AF9064-btn {
         background-color: $color-AF9064;
         border: 1px solid transparent;

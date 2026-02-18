@@ -1,0 +1,46 @@
+.slick-arrow {
+    width: 40px;
+
+    .prev-arrow {
+        transform: rotate(180deg);
+    }
+}
+
+.treatment-slider-section {
+
+    .slick-list{
+        overflow: visible;
+        margin-left: -35px;
+        margin-right: -35px;
+        
+        .slick-slide{
+            // width: 334px !important;
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+    }
+
+    .treatment-card {
+        width: 334px !important;
+    }
+
+}
+
+.testimonial-slider-section{
+    .slick-list{
+        overflow: visible;
+         margin-left: -120px;
+        margin-right: -120px;
+        
+        .slick-slide{
+            // width: 334px !important;
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+    }
+    .devider{
+        margin-left: 45px;
+        margin-right: 50px;
+        border: 1px solid rgba($color: $color-000000, $alpha: 0.2); 
+    }
+}

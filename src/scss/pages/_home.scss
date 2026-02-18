@@ -1,12 +1,17 @@
 .hero-section {
     .hero-layer {
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0));
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.2));
     }
+
+
 }
 
-.left-right-section{
-    .right-content{
+.left-right-media-section {
+    .left-image {
+        height: 590px;
+    }
+
+    .right-content {
         padding-right: 160px;
-    
     }
 }
