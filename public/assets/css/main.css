@@ -14497,7 +14497,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  box-sizing: border-box;
 }
 
 h1, .h1,
@@ -17506,6 +17505,23 @@ textarea {
   text-overflow: ellipsis;
 }
 
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.row > * {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.row.row36 {
+  margin-left: -36px;
+  margin-right: -36px;
+}
+.row.row36 > * {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
 @media (max-width: 991.98px) {
   .px-p-0 {
     padding-left: 0 !important;
@@ -18030,7 +18046,7 @@ header nav ul li .header-link:hover {
 }
 
 .hero-section .hero-layer {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0));
 }
 
 .left-right-media-section .left-image {
@@ -18038,6 +18054,20 @@ header nav ul li .header-link:hover {
 }
 .left-right-media-section .right-content {
   padding-right: 160px;
+}
+
+.treatements-cards-section .right-description {
+  padding-right: 35px !important;
+}
+
+.category-hero-section {
+  height: 541px;
+}
+.category-hero-section .category-hero-layer {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2));
+}
+.category-hero-section .prev-arrow {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=main.css.map */
