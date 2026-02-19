@@ -1,4 +1,4 @@
-.bg-FFFFFF {
+.bg-white {
     background-color: $color-FFFFFF;
 }
 
@@ -30,12 +30,15 @@
     background-color: $color-666666;
 }
 
-.bg-000000 {
+.bg-black {
     background-color: $color-000000;
 }
 
 .bg-E0E0E0 {
     background-color: $color-E0E0E0;
+}
+.bg-FFFFFF1A {
+    background-color: $color-FFFFFF1A;
 }
 
 //text-color
@@ -71,7 +74,7 @@
     color: $color-666666;
 }
 
-.text-000000 {
+.text-black {
     color: $color-000000;
 }
 
@@ -122,6 +125,12 @@
 //radius
 .radius3 { border-radius: $radius3; }
 .radius50 { border-radius: $radius50; }
+
+//border
+.white-full-border { border: $white-border; }
+.white-bottom-border { border-bottom: $white-border; }
+.gray-bottom-border { border-bottom: $gray-border; }
+.gray-full-border { border: $gray-border; }
 
 //opacity
 .opacity4 { opacity: $opacity4; }
