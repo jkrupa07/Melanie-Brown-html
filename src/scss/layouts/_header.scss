@@ -28,4 +28,20 @@ header {
             }
         }
     }
+
+    &.black-header {
+        .header-logo {
+            img {
+                filter: invert(1);
+            }
+        }
+
+        .navigation {
+            li {
+                .header-link {
+                    filter: invert(1);
+                }
+            }
+        }
+    }
 }

@@ -18056,8 +18056,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding-left: 35px;
   padding-right: 35px;
 }
-.treatment-slider-section .treatment-card {
-  width: 334px !important;
+.treatment-slider-section .treatment-image {
+  height: 390px;
 }
 
 .testimonial-slider-section .slick-list {
@@ -18094,13 +18094,15 @@ header nav ul li .header-link {
 header nav ul li .header-link:hover {
   text-decoration: underline !important;
 }
+header.black-header .header-logo img {
+  filter: invert(1);
+}
+header.black-header .navigation li .header-link {
+  filter: invert(1);
+}
 
 .hero-section .hero-layer {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0));
-}
-
-.treatment-card .treatment-image {
-  height: 390px;
 }
 
 .left-right-media-section .left-image {
