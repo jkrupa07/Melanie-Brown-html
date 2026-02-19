@@ -1,0 +1,15 @@
+.form-control {
+    // border-bottom: 1px solid $color-E0E0E0;
+    border: none;
+    border-bottom: 1px solid $color-E0E0E0;
+    border-radius: 0%;
+    &::placeholder {
+        color: $color-FFFFFF;
+        opacity: 0.3;
+    }
+
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
