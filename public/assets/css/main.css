@@ -17690,6 +17690,10 @@ textarea {
   color: #E0E0E0;
 }
 
+.text-FFFFFFB2 {
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+
 .font14 {
   font-size: 14px;
 }
@@ -18115,12 +18119,18 @@ header.black-header .navigation li .header-link {
 .treatments-cards-section .right-description {
   padding-right: 35px !important;
 }
+.treatments-cards-section .treatment-card .treatment-image {
+  height: 390px;
+}
 
 .category-hero-section {
   height: 541px;
 }
 .category-hero-section .category-hero-layer {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2));
+}
+.category-hero-section .category-image {
+  height: 133px;
 }
 .category-hero-section .prev-arrow {
   transform: rotate(180deg);
