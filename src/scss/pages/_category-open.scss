@@ -3,3 +3,28 @@
         padding-left: 40px;
     }
 }
+.faq-section{
+    .category-faq{
+        .closet-content {
+            display: none;
+        }
+
+        .icon-bg {
+            width: 14px;
+            height: 14px;
+            position: relative;
+            padding-right: 30px;
+            img {
+                height: 20px;
+            }
+        }
+
+        .closet-header.active {
+            .icon-bg img {
+                transform: rotate(45deg); 
+            }
+        }
+
+    
+    }
+}

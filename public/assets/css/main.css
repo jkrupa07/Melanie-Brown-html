@@ -18094,4 +18094,20 @@ header nav ul li .header-link:hover {
   padding-left: 40px;
 }
 
+.faq-section .category-faq .closet-content {
+  display: none;
+}
+.faq-section .category-faq .icon-bg {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  padding-right: 30px;
+}
+.faq-section .category-faq .icon-bg img {
+  height: 20px;
+}
+.faq-section .category-faq .closet-header.active .icon-bg img {
+  transform: rotate(45deg);
+}
+
 /*# sourceMappingURL=main.css.map */
