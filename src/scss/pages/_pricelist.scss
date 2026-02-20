@@ -1,0 +1,16 @@
+.sticky-bar-section{
+    width: 100%;
+    padding: 11px 27px;
+    backdrop-filter: blur(4px);
+    .item{
+        height: 40px;
+    }
+}
+.consultation-card{
+    
+    .consultation-card-wrapper{
+        padding-left: 41px;
+        padding-right: 41px;
+        border: 1px solid  rgba($color: $color-000000, $alpha: 0.1);
+    }
+}

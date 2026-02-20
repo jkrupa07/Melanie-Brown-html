@@ -17650,6 +17650,10 @@ textarea {
   background-color: rgba(255, 255, 255, 0.6980392157);
 }
 
+.bg-49484F73 {
+  background-color: rgba(73, 72, 79, 0.4509803922);
+}
+
 .text-white {
   color: #FFFFFF;
 }
@@ -18154,6 +18158,21 @@ header.black-header .navigation li .header-link {
 }
 .faq-section .category-faq .closet-header.active .icon-bg img {
   transform: rotate(45deg);
+}
+
+.sticky-bar-section {
+  width: 100%;
+  padding: 11px 27px;
+  backdrop-filter: blur(4px);
+}
+.sticky-bar-section .item {
+  height: 40px;
+}
+
+.consultation-card .consultation-card-wrapper {
+  padding-left: 41px;
+  padding-right: 41px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=main.css.map */
