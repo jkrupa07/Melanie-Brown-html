@@ -17854,6 +17854,10 @@ textarea {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.gray-top-border {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 .gray-full-border {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -18228,6 +18232,21 @@ header.black-header .navigation li .header-link {
 .image-faq-section .image-faq .area {
   height: 80px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sub-hero-section {
+  height: 615px;
+}
+.sub-hero-section .sub-hero-layer {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2));
+}
+
+.logo-slider-section {
+  padding-left: 38px;
+  padding-right: 38px;
+}
+.logo-slider-section .logo-item {
+  height: 108px;
 }
 
 /*# sourceMappingURL=main.css.map */

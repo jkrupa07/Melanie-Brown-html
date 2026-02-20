@@ -5,9 +5,10 @@ export class Plugins {
   init() {
     this.ExploreTreatmentSlider();
     this.TestimonialSlider();
+    this.LogoSlider();
   }
 
-  ExploreTreatmentSlider(){
+  ExploreTreatmentSlider() {
     $('.explore-treatment-slider').slick({
       slidesToShow: 3.5,
       slidesToScroll: 1,
@@ -32,7 +33,7 @@ export class Plugins {
       ]
     });
   }
-  TestimonialSlider(){
+  TestimonialSlider() {
     $('.testimonial-slider').slick({
       slidesToShow: 1.5,
       slidesToScroll: 1,
@@ -43,4 +44,20 @@ export class Plugins {
     });
   }
 
+  LogoSlider() {
+    $('.logo-slider-wrapper').slick({
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000 ,
+      arrows: false,
+      dots: false,
+      infinite: true,
+      responsive: [
+        { breakpoint: 1024, settings: { slidesToShow: 4 } },
+        { breakpoint: 768, settings: { slidesToShow: 3 } },
+        { breakpoint: 480, settings: { slidesToShow: 2 } },
+      ]
+    });
+  }
 }

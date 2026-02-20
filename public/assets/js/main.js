@@ -20436,6 +20436,7 @@ var Plugins = /*#__PURE__*/function () {
     value: function init() {
       this.ExploreTreatmentSlider();
       this.TestimonialSlider();
+      this.LogoSlider();
     }
   }, {
     key: "ExploreTreatmentSlider",
@@ -20471,6 +20472,35 @@ var Plugins = /*#__PURE__*/function () {
         infinite: false,
         prevArrow: '.testimonial-section .prev-arrow',
         nextArrow: '.testimonial-section .next-arrow'
+      });
+    }
+  }, {
+    key: "LogoSlider",
+    value: function LogoSlider() {
+      $('.logo-slider-wrapper').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        infinite: true,
+        responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3
+          }
+        }, {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2
+          }
+        }]
       });
     }
   }]);
