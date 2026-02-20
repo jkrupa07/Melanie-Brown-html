@@ -1,16 +1,86 @@
-.sticky-bar-section{
+.sticky-bar-section {
     width: 100%;
     padding: 11px 27px;
     backdrop-filter: blur(4px);
-    .item{
+
+    .item {
         height: 40px;
     }
 }
-.consultation-card{
-    
-    .consultation-card-wrapper{
+
+.consultation-card {
+
+    .consultation-card-wrapper {
         padding-left: 41px;
         padding-right: 41px;
-        border: 1px solid  rgba($color: $color-000000, $alpha: 0.1);
+        border: 1px solid rgba($color: $color-000000, $alpha: 0.1);
     }
+}
+
+.image-faq-section {
+
+    .image-faq {
+
+        .closet-content {
+            display: none;
+              position: absolute;
+                top: 0;
+
+            &.active-content {
+                position: absolute;
+                top: 0;
+            }
+        }
+
+        .icon-bg {
+            width: 14px;
+            height: 14px;
+            position: relative;
+
+            img {
+                height: 20px;
+                transition: transform 0.3s ease;
+            }
+        }
+
+        .closet-header {
+            padding: 40px;
+
+            &.active {
+                position: relative;
+                z-index: 1;
+                justify-content: end !important;
+
+                .closet-header-title {
+                    display: none;
+                }
+
+                .icon-bg img {
+                    transform: rotate(45deg);
+                    filter: invert(1);
+                }
+            }
+        }
+
+
+        .image-faq-hero {
+            display: block;
+
+            .faq-img {
+                height: 430px;
+            }
+
+            .image-faq-hero-layer {
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.2));
+            }
+
+        }
+
+        .area {
+            height: 80px;
+            border-bottom: $border1;
+        }
+
+    }
+
 }

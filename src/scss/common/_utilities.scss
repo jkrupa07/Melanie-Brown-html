@@ -46,6 +46,9 @@
 .bg-FFFFFFB2 {
     background-color: $color-FFFFFFB2;
 }
+.bg-000000A {
+    background-color: $color-000000A;
+}
 .bg-49484F73{
     background-color: $color-49484F73;
 }
@@ -142,6 +145,7 @@
 .white-bottom-border { border-bottom: $white-border; }
 .gray-bottom-border { border-bottom: $gray-border; }
 .gray-full-border { border: $gray-border; }
+.border1{border: $border1;}
 
 //opacity
 .opacity4 { opacity: $opacity4; }
