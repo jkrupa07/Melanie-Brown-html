@@ -18228,15 +18228,6 @@ footer .media-bg .media-img {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.image-faq-section .image-faq .closet-content {
-  display: none;
-  position: absolute;
-  top: 0;
-}
-.image-faq-section .image-faq .closet-content.active-content {
-  position: absolute;
-  top: 0;
-}
 .image-faq-section .image-faq .icon-bg {
   width: 14px;
   height: 14px;
@@ -18250,8 +18241,9 @@ footer .media-bg .media-img {
   padding: 40px;
 }
 .image-faq-section .image-faq .closet-header.active {
-  position: relative;
+  position: absolute;
   z-index: 1;
+  width: 100%;
   justify-content: end !important;
 }
 .image-faq-section .image-faq .closet-header.active .closet-header-title {

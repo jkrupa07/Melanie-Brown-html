@@ -21,16 +21,16 @@
 
     .image-faq {
 
-        .closet-content {
-            display: none;
-              position: absolute;
-                top: 0;
+        // .closet-content {
+        //     display: none;
+        //       position: absolute;
+        //         top: 0;
 
-                &.active-content {
-                    position: absolute;
-                    top: 0;
-                }
-        }
+        //         &.active-content {
+        //             position: absolute;
+        //             top: 0;
+        //         }
+        // }
 
         .icon-bg {
             width: 14px;
@@ -47,8 +47,9 @@
             padding: 40px;
 
             &.active {
-                position: relative;
+                position: absolute;
                 z-index: 1;
+                width: 100%;
                 justify-content: end !important;
 
                 .closet-header-title {

@@ -20585,6 +20585,24 @@ function accordion_defineProperties(target, props) { for (var i = 0; i < props.l
 function accordion_createClass(Constructor, protoProps, staticProps) { if (protoProps) accordion_defineProperties(Constructor.prototype, protoProps); if (staticProps) accordion_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function accordion_toPropertyKey(arg) { var key = accordion_toPrimitive(arg, "string"); return accordion_typeof(key) === "symbol" ? key : String(key); }
 function accordion_toPrimitive(input, hint) { if (accordion_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (accordion_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+// export class Accordion {
+//     init() {
+//         this.Accordion();
+//     }
+
+//     Accordion() {
+//         $(document).ready(function () {
+//             // Open the first child by default
+//             $('.closet-header').first().addClass('active').next('.closet-content').slideDown();
+//             // Handle click events for closet headers
+//             $('.closet-header').click(function () {
+//                 $(this).toggleClass('active').next('.closet-content').slideToggle();
+//                 $('.closet-header').not(this).removeClass('active').next('.closet-content').slideUp();
+//             });
+//         });
+//     }
+// }
+
 var Accordion = /*#__PURE__*/function () {
   function Accordion() {
     accordion_classCallCheck(this, Accordion);
@@ -20598,14 +20616,33 @@ var Accordion = /*#__PURE__*/function () {
     key: "Accordion",
     value: function Accordion() {
       $(document).ready(function () {
-        // Open the first child by default
-        $('.closet-header').first().addClass('active').next('.closet-content').slideDown();
-        $('.closet-content').first().addClass('active-content');
-        // Handle click events for closet headers
+        // Open only the first item per closet parent
+        $('.closet-header').each(function () {
+          var $this = $(this);
+          var $parent = $this.closest('.closet-item');
+          var $container = $parent.parent(); // parent container of closet-items
+
+          // If this is the first closet-item in the container, open it
+          if ($parent.is($container.find('.closet-item').first())) {
+            $this.addClass('active');
+            $this.next('.closet-content').slideDown();
+          } else {
+            $this.next('.closet-content').hide();
+          }
+        });
+
+        // Click event
         $('.closet-header').click(function () {
-          $(this).toggleClass('active').next('.closet-content').slideToggle();
-          $('.closet-header').not(this).removeClass('active').next('.closet-content').slideUp();
-          $('.closet-content').toggleClass('active-content');
+          var $this = $(this);
+          var $parent = $this.closest('.closet-item');
+          var $container = $parent.parent();
+
+          // Close other headers in the same container
+          $container.find('.closet-header').not($this).removeClass('active').next('.closet-content').slideUp();
+
+          // Toggle clicked
+          $this.toggleClass('active');
+          $this.next('.closet-content').slideToggle();
         });
       });
     }
