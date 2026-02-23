@@ -3,9 +3,26 @@ import "slick-carousel";
 export class Plugins {
 
   init() {
+    this.FooterSlider();
     this.ExploreTreatmentSlider();
     this.TestimonialSlider();
     this.LogoSlider();
+  }
+
+  FooterSlider() {
+    $('.footer-slider').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      responsive: [
+        { breakpoint: 992, settings: { slidesToShow: 3 } },
+        { breakpoint: 576, settings: { slidesToShow: 2 } }
+      ]
+    });
   }
 
   ExploreTreatmentSlider() {
@@ -49,7 +66,7 @@ export class Plugins {
       slidesToShow: 7,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 1000 ,
+      autoplaySpeed: 1500,
       arrows: false,
       dots: false,
       infinite: true,

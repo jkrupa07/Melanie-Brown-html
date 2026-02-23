@@ -20434,9 +20434,34 @@ var Plugins = /*#__PURE__*/function () {
   plugins_createClass(Plugins, [{
     key: "init",
     value: function init() {
+      this.FooterSlider();
       this.ExploreTreatmentSlider();
       this.TestimonialSlider();
       this.LogoSlider();
+    }
+  }, {
+    key: "FooterSlider",
+    value: function FooterSlider() {
+      $('.footer-slider').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        responsive: [{
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3
+          }
+        }, {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 2
+          }
+        }]
+      });
     }
   }, {
     key: "ExploreTreatmentSlider",
@@ -20481,7 +20506,7 @@ var Plugins = /*#__PURE__*/function () {
         slidesToShow: 7,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 1500,
         arrows: false,
         dots: false,
         infinite: true,

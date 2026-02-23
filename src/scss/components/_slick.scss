@@ -45,3 +45,20 @@
     }
 }
 
+footer{
+
+    .slick-list {
+        margin-left: -7px;
+        margin-right: -7px;
+
+        .slick-slide {
+            // width: 334px !important;
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+    }
+
+    .footer-slider-image {
+        height: 208px;
+    }
+}

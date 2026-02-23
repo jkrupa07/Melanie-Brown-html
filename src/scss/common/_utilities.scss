@@ -141,12 +141,14 @@
 .radius50 { border-radius: $radius50; }
 
 //border
-.white-full-border { border: $white-border; }
-.white-bottom-border { border-bottom: $white-border; }
-.gray-bottom-border { border-bottom: $gray-border; }
-.gray-top-border { border-top: $gray-border; }
-.gray-full-border { border: $gray-border; }
-.border1{border: $border1;}
+.white-full-border3 { border: $white-border3; }
+.white-bottom-border3 { border-bottom: $white-border3; }
+.white-top-border1 { border-top: $white-border1;}
+.gray-full-border2 { border: $gray-border2; }
+.gray-bottom-border2 { border-bottom: $gray-border2; }
+.gray-top-border2 { border-top: $gray-border2; }
+
+.border1{border: $gray-border1;}
 
 //opacity
 .opacity4 { opacity: $opacity4; }
