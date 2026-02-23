@@ -18115,6 +18115,9 @@ header {
   z-index: 99999;
   padding-block: 35px;
 }
+header .header-logo {
+  width: 305px;
+}
 header nav ul li {
   margin-right: 20px;
 }
@@ -18130,11 +18133,21 @@ header nav ul li .header-link {
 header nav ul li .header-link:hover {
   text-decoration: underline !important;
 }
-header.black-header .header-logo img {
+header.black-header .black-logo {
+  display: block !important;
+}
+header.black-header .white-logo {
+  display: none !important;
+}
+header.black-header .navigation .header-link {
   filter: invert(1);
 }
-header.black-header .navigation li .header-link {
-  filter: invert(1);
+header.header-fixed {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
+}
+header.header-fixed-os {
+  background: transparent;
 }
 
 footer .footer-logo {

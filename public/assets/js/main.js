@@ -20506,7 +20506,9 @@ var Plugins = /*#__PURE__*/function () {
         slidesToShow: 7,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 0,
+        speed: 3000,
+        cssEase: 'linear',
         arrows: false,
         dots: false,
         infinite: true,
@@ -20674,10 +20676,10 @@ var Header = /*#__PURE__*/function () {
         var sticky = $(".header"),
           scroll = $(window).scrollTop();
         if (scroll >= 50) {
-          sticky.addClass("header-fixed");
+          sticky.addClass("header-fixed black-header");
           sticky.removeClass("header-fixed-os");
         } else {
-          sticky.removeClass("header-fixed");
+          sticky.removeClass("header-fixed black-header");
           sticky.addClass("header-fixed-os");
         }
         var currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;

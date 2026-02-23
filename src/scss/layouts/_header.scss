@@ -2,6 +2,10 @@ header {
     z-index: 99999;
     padding-block: 35px;
 
+    .header-logo {
+        width: 305px;
+    }
+
     nav {
         ul {
             li {
@@ -30,18 +34,28 @@ header {
     }
 
     &.black-header {
-        .header-logo {
-            img {
-                filter: invert(1);
-            }
+        .black-logo {
+            display: block !important;
+        }
+
+        .white-logo {
+            display: none !important;
         }
 
         .navigation {
-            li {
-                .header-link {
-                    filter: invert(1);
-                }
+            .header-link {
+                filter: invert(1);
             }
         }
+    }
+
+
+    &.header-fixed {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background-color: $color-FFFFFF;
+    }
+
+    &.header-fixed-os {
+        background: transparent;
     }
 }

@@ -9,11 +9,11 @@ export class Header {
             var sticky = $(".header"),
                 scroll = $(window).scrollTop();
             if (scroll >= 50) {
-                sticky.addClass("header-fixed");
+                sticky.addClass("header-fixed black-header");
                 sticky.removeClass("header-fixed-os");
             }
             else {
-                sticky.removeClass("header-fixed");
+                sticky.removeClass("header-fixed black-header");
                 sticky.addClass("header-fixed-os");
             }
             var currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
