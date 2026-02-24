@@ -8450,7 +8450,7 @@ textarea.form-control-lg {
   font-size: 1rem !important;
 }
 
-.{
+.fst-italic {
   font-style: italic !important;
 }
 
@@ -18001,11 +18001,16 @@ button,
 }
 .btnA .btn-arrow {
   width: 27px;
-  transform-origin: left;
   transition: transform 0.3s ease-in-out;
 }
 .btnA:hover .btn-arrow {
-  transform: scaleX(1.3);
+  transform: translateX(3px);
+}
+.btnA:hover .btn-arrow .arrow-original {
+  display: none;
+}
+.btnA:hover .btn-arrow .arrow-hover {
+  display: block !important;
 }
 .btnA.link-btn {
   padding: 0;
@@ -18219,7 +18224,10 @@ footer .media-bg .media-img {
 .category-hero-section .category-image {
   height: 133px;
 }
-.category-hero-section .prev-arrow {
+.category-hero-section .btnA:hover .btn-arrow {
+  transform: translateX(-3px);
+}
+.category-hero-section .btnA .prev-arrow {
   transform: rotate(180deg);
 }
 

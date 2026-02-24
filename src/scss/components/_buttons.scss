@@ -16,17 +16,25 @@ button,
 
     .btn-arrow {
         width: 27px;
-        transform-origin: left;
         transition: transform 0.3s ease-in-out;
     }
 
     &:hover {
         .btn-arrow {
-            transform: scaleX(1.3);
+            transform: translateX(3px);
+
+            .arrow-original {
+                display: none;
+            }
+
+            .arrow-hover {
+                display: block !important;
+            }
+
         }
     }
 
-    &.link-btn{
+    &.link-btn {
         padding: 0;
         color: $color-494850;
 
