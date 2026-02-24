@@ -2,7 +2,7 @@
 //     init() {
 //         this.Accordion();
 //     }
-    
+
 //     Accordion() {
 //         $(document).ready(function () {
 //             // Open the first child by default
@@ -20,7 +20,7 @@ export class Accordion {
     init() {
         this.Accordion();
     }
-    
+
     Accordion() {
         $(document).ready(function () {
             // Open only the first item per closet parent
@@ -44,13 +44,25 @@ export class Accordion {
                 const $parent = $this.closest('.closet-item');
                 const $container = $parent.parent();
 
-                // Close other headers in the same container
-                $container.find('.closet-header').not($this).removeClass('active')
-                    .next('.closet-content').slideUp();
+                if ($this.hasClass('active')) {
 
-                // Toggle clicked
-                $this.toggleClass('active');
-                $this.next('.closet-content').slideToggle();
+                    // Close content first, then remove class
+                    $this.next('.closet-content').slideUp(400, function () {
+                        $this.removeClass('active');
+                    });
+
+                } else {
+
+                    // Close others first
+                    $container.find('.closet-header.active')
+                        .removeClass('active')
+                        .next('.closet-content')
+                        .slideUp(400);
+
+                    // Then open clicked
+                    $this.addClass('active');
+                    $this.next('.closet-content').slideDown(400);
+                }
             });
         });
     }

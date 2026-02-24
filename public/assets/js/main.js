@@ -20636,13 +20636,19 @@ var Accordion = /*#__PURE__*/function () {
           var $this = $(this);
           var $parent = $this.closest('.closet-item');
           var $container = $parent.parent();
+          if ($this.hasClass('active')) {
+            // Close content first, then remove class
+            $this.next('.closet-content').slideUp(400, function () {
+              $this.removeClass('active');
+            });
+          } else {
+            // Close others first
+            $container.find('.closet-header.active').removeClass('active').next('.closet-content').slideUp(400);
 
-          // Close other headers in the same container
-          $container.find('.closet-header').not($this).removeClass('active').next('.closet-content').slideUp();
-
-          // Toggle clicked
-          $this.toggleClass('active');
-          $this.next('.closet-content').slideToggle();
+            // Then open clicked
+            $this.addClass('active');
+            $this.next('.closet-content').slideDown(400);
+          }
         });
       });
     }
