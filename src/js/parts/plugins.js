@@ -56,8 +56,8 @@ export class Plugins {
       slidesToScroll: 1,
       arrows: true,
       infinite: false,
-      prevArrow: '.testimonial-section .prev-arrow',
-      nextArrow: '.testimonial-section .next-arrow',
+      prevArrow: '.testimonial-slider-section .prev-arrow',
+      nextArrow: '.testimonial-slider-section .next-arrow',
     });
   }
 
